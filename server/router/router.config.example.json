@@ -1,0 +1,18 @@
+{
+  "allowCloud": false,
+  "defaults": {
+    "provider": "ollama",
+    "model_small": "llama3.1:8b",
+    "model_reason": "qwen2.5:14b"
+  },
+  "cloud": {
+    "openai_model": "gpt-4o-mini",
+    "anthropic_model": "claude-3-haiku-20240307",
+    "gemini_model": "gemini-1.5-flash"
+  },
+  "routing": [
+    { "if": "intent==quick",   "use": "local_small" },
+    { "if": "intent==reason",  "use": "local_reason" },
+    { "if": "intent==write && allowCloud", "use": "cloud_openai" }
+  ]
+}
