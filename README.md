@@ -46,3 +46,19 @@ pip install -r services/ocr/requirements.txt
 uvicorn services.ocr.app:app --port 8001 --reload
 
 ```
+### (3) Pull Local LLM 
+```bash
+ollama pull llama3.1:8b
+# (optional stronger local)
+ollama pull qwen2.5:14b
+```
+
+### (3) Enable Cloud (Optional)
+```bash
+#API Keys NEEDED
+change ALLOW_CLOUD in .env to TRUE
+```
+### (4) Run OpenCue
+```bash
+npm run dev
+```
