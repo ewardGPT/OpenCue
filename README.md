@@ -23,7 +23,7 @@ OpenCue is a local-first, multi-AI copilot. It watches **the screen** on demand 
 
 ### Install
 ```bash
-git clone <your_repo_url> opencue
+git clone https://github.com/ewardGPT/OpenCue.git
 cd opencue
 cp .env.example .env
 cp server/router/router.config.example.json server/router/router.config.json
