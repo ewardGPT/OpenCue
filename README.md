@@ -22,7 +22,7 @@ OpenCue is a local-first, multi-AI copilot. It watches **the screen** on demand 
   - Windows (choco): `choco install tesseract`
 ### Install Windows
 ```bash
-save install.ps1 (Make sure it is in your User Folder)
+save install.ps1 (User Folder)
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -WithRag -PullModels
 ```
 ### Install Linux/MacOS
