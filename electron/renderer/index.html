@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>OpenCue Overlay</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <div id="app">
+    <div class="card">
+      <div class="row">
+        <textarea id="prompt" placeholder="Ask OpenCue… (Ctrl/Cmd+Enter to send)"></textarea>
+      </div>
+      <div class="row">
+        <button id="btn-ask">Ask</button>
+        <button id="btn-ocr">OCR now (Ctrl/Cmd+H)</button>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h4>OCR Context</h4>
+          <pre id="ocr"></pre>
+        </div>
+        <div class="col">
+          <h4>Answer</h4>
+          <div id="answer"></div>
+        </div>
+      </div>
+      <div class="hint">Toggle overlay: Ctrl/Cmd+B</div>
+    </div>
+  </div>
+  <script src="./renderer.js"></script>
+</body>
+</html>
