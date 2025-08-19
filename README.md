@@ -21,7 +21,7 @@ OpenCue is a local-first, multi-AI copilot. It watches **the screen** on demand 
   - Ubuntu/Debian: `sudo apt-get install tesseract-ocr`
   - Windows (choco): `choco install tesseract`
 
-### Install Raw
+### (1) Install Raw
 ```bash
 git clone https://github.com/ewardGPT/OpenCue.git
 cd opencue
@@ -30,7 +30,7 @@ cp server/router/router.config.example.json server/router/router.config.json
 npm i
 ```
 
-### Install Windows
+### (2) Install Windows
 ```bash
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -38,7 +38,7 @@ pip install -r .\services\ocr\requirements.txt
 uvicorn services.ocr.app:app --port 8001 --reload
 
 ```
-### Install Linux/MacOS
+### (2) Install Linux/MacOS
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
