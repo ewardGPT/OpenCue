@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import fetch, { type Response } from "node-fetch";
 
 const toText = async (r: Response) => {
   const t = await r.text();
